@@ -2,9 +2,9 @@ body { background: #f8f9fa; }
 .hero { background: linear-gradient(90deg,#0d6efd22,#6f42c122); border-radius: .5rem; }
 .foto { width: 120px; height:120px;  object-fit: contain;; border-radius:50%; }
 .section-title { border-left: 4px solid #0d6efd; padding-left: .75rem; }
-@media print {
+/*@media print {
 
-  /* Desactivar JS y componentes dinámicos */
+  /* Desactivar JS y componentes dinámicos 
   .navbar,
   .carousel,
   button,
@@ -12,7 +12,7 @@ body { background: #f8f9fa; }
     display: none !important;
   }
 
-  /* Asegurar que los links sean texto normal */
+  /* Asegurar que los links sean texto normal 
   a {
     position: static !important;
     display: inline !important;
@@ -21,16 +21,16 @@ body { background: #f8f9fa; }
     text-decoration: underline !important;
   }
 
-  /* Mostrar la URL real en el PDF */
+  /* Mostrar la URL real en el PDF 
   a::after {
     content: " (" attr(href) ")";
     font-size: 10px;
     color: #555;
   }
 
-  /* Evitar capas raras */
+  /* Evitar capas raras 
   * {
     box-shadow: none !important;
     transform: none !important;
   }
-}
+}*/
