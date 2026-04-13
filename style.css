@@ -3,3 +3,18 @@ body { background: #f8f9fa; }
 .foto { width: 120px; height:120px;  object-fit: contain;; border-radius:50%; }
 .section-title { border-left: 4px solid #0d6efd; padding-left: .75rem; }
 
+/* Evitar cortes de sección al imprimir */
+@media print {
+    section, .card, .list-group-item {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    body {
+        background: white;
+    }
+
+    .navbar, footer {
+        display: none; /* Opcional: oculta elementos innecesarios */
+    }
+}
