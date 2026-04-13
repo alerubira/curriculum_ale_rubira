@@ -14,6 +14,6 @@ section, .card, .list-group-item {
 /* Estilos específicos para impresión */
 @media print {
     .navbar, footer {
-        display: none;
+        display: none !important;
     }
 }
