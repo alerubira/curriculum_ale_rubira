@@ -34,7 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     orientation: 'portrait'
                 },
                 pagebreak: {
-                    mode: ['avoid-all', 'css', 'legacy']
+                    mode: ['css', 'legacy'],
+                    before: ['.salto-pagina'],
+                    after: [],
+                    avoid: ['section', '.card', '.list-group-item']
                 }
             };
 

@@ -5,17 +5,39 @@
 
 
 
-/* Evitar cortes de secciones */
-section, .card, .list-group-item {
+/* Evitar cortes de elementos importantes al generar el PDF */
+section,
+.card,
+.list-group-item {
     break-inside: avoid;
     page-break-inside: avoid;
 }
 
 /* Estilos específicos para impresión */
 @media print {
-    .navbar, footer {
+
+    .navbar,
+    footer,
+    #downloadCv {
         display: none !important;
     }
+
+    body {
+        background: #ffffff;
+    }
+
+    .hero {
+        background: #ffffff;
+    }
+
+    section {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
+.salto-pagina {
+    break-before: page;
+    page-break-before: always;
 }
 :root {
     --primary-color: #0d6efd;
